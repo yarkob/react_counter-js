@@ -4,8 +4,6 @@ import './App.scss';
 export const App = () => {
   const [count, setCount] = useState(0);
 
-  console.log(count);
-
   const addOne = () => {
     setCount(prevCount => {
       return prevCount + 1;
@@ -21,7 +19,6 @@ export const App = () => {
   // DON'T change the code below
   const increase = () => {
     if (count % 5 === 0) {
-      console.log(`Entered ${count}`);
       add100();
     }
 
